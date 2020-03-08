@@ -16,7 +16,7 @@
     To reach a close-to-optimal solution, your lights have to adapt live to changing road patterns.
     This already partly exists in the case of actuated traffic lights - lights that take in environmental information (such as through sensors in the ground that detect when cars are present) and use that information to adapt to the current scenario.
     However, these sensors don't give enough information to make really good judgements (typically just a binary - true if a car is present and false if there is no car), and they only gather information to pass on to one connected traffic intersection. 
-    I think you know where I'm going with this. In order to devise a better traffic system, you have to give it as much information as possible, and allow it to respond dynamically using this informaiton. 
+    In order to devise a better traffic system, you have to give it as much information as possible, and allow it to respond dynamically using this information. 
     Current solutions are getting closer: there now exist streets that can synchronize their lights based on collective information on the number of cars on that street, but these are limited to only the street that they operate and nothing else.
     The most advanced system that currently seems to exist is called SCATS (Sydney Coordinated Adapted Traffic System). This system is able to share information among multiple traffic lights that is collected by the previously mentioned car sensors at each intersection and coordinate them, providing a stronger traffic optimization than any of the prior solutions.
     Information still seems limited though, and SCATS was originally built in 1982. There's probably a better way to do this by now. 
@@ -25,7 +25,7 @@
     Let's take a scenario where we have close to perfect information about number of cars on the road, the speed that each is going at, etc, can we beat existing methods?
 
 
-    Here is a video of a traffic light system where all the lights are actuated (left) vs a simple evolutionary algorithm (right) I wrote simulated in the open source traffic simulation software, <a href="https://sumo.dlr.de/docs/">SUMO</a>. The streets are an actual set of streets next to my house. 
+    Here is a video of a traffic light system where all the lights are actuated (left) vs a simple evolutionary algorithm (right) I wrote simulated in the open source traffic simulation software, <a href="https://sumo.dlr.de/docs/">SUMO</a>. The streets are an actual set of streets scraped from openstreetmap. 
     <br></br>
     <video controls>
         <source src="./img/sumo_vid.mp4" type="video/mp4">
